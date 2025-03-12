@@ -22,8 +22,9 @@ NB: the comma is used in the following to separate thousands. <br />
   b] Like in question 1, we consider the two elements as a unique value (because we can either choose one, the other, or neither), thus we get that we have a total of binomial(7,3)*binomial(6,3) = 35 * 20 = 700 possible combinations. <br />
   c] We can subtract from all the possible combinations the ones in which the two are present, which means total_combinations - (binomial(7,2) * binomial(5,2)) = 1,120 - (21*10) = 1,120 - 210 = 910 possible combinations are still valid. <br />
 **[7]** <br />
-  a] <br />
-  b] <br />
+  a] We need to use the divider method: considering that we need to invest in all of four - meaning that we remain with 20-(4+3+2+1) = 10 million to invest - we have that: binom(10+4-1, 10) = 286, so we have 286 different ways to proceed. <br />
+  b] Like above, we use the divider method for the 4 possible scenarios: (1,2,3), (1,2,4), (1,3,4), (2,3,4), and then we add the possible strategies we have calculated before, as they are also viable in this scenario. This is possible because we don't care about the order of the elements. As such, we obtain that:<br />
+  binom(14+3-1,14) + binom(13+3-1,13) + binom(12+3-1,12) + binom(11+3-1,11) + 286 = 120 + 105 + 91 + 78 + 286 = 680 possible strategies. 
 **[8]** <br />
   a] <br />
   b] <br />
