@@ -1,5 +1,5 @@
 # WRITTEN PROBLEMS
-NB: the comma is used in the following to separate thousands.
+NB: the comma is used in the following to separate thousands. <br />
 **[1]** <br />
   a] Using the permutation rule, and knowing that every person can only appear once, we have 10*9*8*7*6*5*4*3*2*1 = 10! = 3,6288,00 possible combinations. <br />
   b] Because we know that two people need to always stick close, we can consider the two of them as a unique choice when accounting for the number of possible combinations and multiply the total by 2, due to the fact that there is no imposed ordering in which the two man can sit, which means there are a total of 2*1 = 2 different combinations they can sit. Because of this, there are a total of (9*8*7*6*5*4*3*2*1)*2 = 9!*2 = 725,760 possibl combinations. <br />
@@ -16,11 +16,11 @@ NB: the comma is used in the following to separate thousands.
   b] Firt, we choose the values for which we want the couples, so which amounts to having binomial (13,2) = 78 possible combinations. Then we choose the suit for the first and for the second couple, with both values being equal to binomial (4,2) = 6 and then we select the fifth card between the other values, which equals to having binomial (11,1) = 11 possible choices of binomial (4,1) = 4 possible selections of a seed. Combining all of these, we get that the probability for having two couples is: 78*6*6*11*4/2,598,960 = 0,04754 = 4,75%  <br />
   c] First, we have 13 possible values for such an outcome and we need to have all the seeds, so in this case we would have binomial (4,4) = 1. Then, as above, we get a card between all the 12 possible available values (binomial (12,1) = 12) and of one between the 4 possible seeds (binomial (4,1) = 4). Because of this, we obtain that the probability of a four of a kind is: 13*1*12*4/2,598,960 = 0,00024 = 0,024% <br />
 **[5]** <br />
-
+  [under contruction]
 **[6]** <br />
-  a] <br />
-  b] <br />
-  c] <br />
+  a] There are a total of binomial(8,3)*binomial(6,3) = 56 * 20 = 1,120 possible combinations. <br />
+  b] Like in question 1, we consider the two elements as a unique value (because we can either choose one, the other, or neither), thus we get that we have a total of binomial(7,3)*binomial(6,3) = 35 * 20 = 700 possible combinations. <br />
+  c] We can subtract from all the possible combinations the ones in which the two are present, which means total_combinations - (binomial(7,2) * binomial(5,2)) = 1,120 - (21*10) = 1,120 - 210 = 910 possible combinations are still valid. <br />
 **[7]** <br />
   a] <br />
   b] <br />
