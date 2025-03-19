@@ -1,6 +1,6 @@
 import random
 
-wins_moriarty = 0 #the number of wins by Moriarty. We could also explicitly make a variable for Holme's victories, but it's not required by the exercise
+wins_moriarty = 0 #the number of wins by Moriarty. We could also explicitly make a variable for Holmes' victories, but it's not required by the exercise
 for i in range(0,100000): #we simulate 100,000 rounds 
     s = 0 #we initialize s to 0 at every round
     while s < 100: #condition necessary for the player to change (exits when s is more than 100)
