@@ -24,11 +24,11 @@ NB: the comma is used in the following to separate thousands. <br />
 **[7]** <br />
   a] We need to use the divider method: considering that we need to invest in all of four - meaning that we remain with 20-(4+3+2+1) = 10 million to invest - we have that: binom(10+4-1, 10) = 286, so we have 286 different ways to proceed. <br />
   b] Like above, we use the divider method for the 4 possible scenarios: (1,2,3), (1,2,4), (1,3,4), (2,3,4), and then we add the possible strategies we have calculated before, as they are also viable in this scenario. This is possible because we don't care about the order of the elements. As such, we obtain that:<br />
-  binom(14+3-1,14) + binom(13+3-1,13) + binom(12+3-1,12) + binom(11+3-1,11) + 286 = 120 + 105 + 91 + 78 + 286 = 680 possible strategies. 
+  binom(14+3-1,14) + binom(13+3-1,13) + binom(12+3-1,12) + binom(11+3-1,11) + 286 = 120 + 105 + 91 + 78 + 286 = 680 possible strategies. <br />
 **[8]** <br />
-  a] <br />
-  b] <br />
-  c] <br />
+  a] In order to find the probability, we need to find the number of students that do not take any course and divide it by the total number of students. In order to find the first quantitiy, we need to find the number of unique students that attend the courses. Because there are some overlaps (the people that attend more than 1 course), we need to subtract these from the number of attending students for the respective course in order not to overcount the total amount of students. This equals to having 27-12-5-2 = 8 unique students that study Java, 28-12-2-8 = 6 unique students that take the C++ course and 20-2-5-8 = 5 unique students that take the Python course. Summing all of these numbers together with the students that take more than one course, we get that 8+6+5+12+5+8+2 = 46 different people take the courses. Thus, the probability of someone not taking one is 1 - 46/100 = 0.54 <br />
+  b] We have calculated these values above, we just need to sum them together and divide the total by the number of students: (8+6+5)/100 = 19/100 = 0.19 <br />
+  c] Assuming knowing equals studies (so we are trying to calculate the chance that at least 1 attends a course), we can find this quantitiy by using the binomial distribution with arguments (2, 0.46) for x = 0 and subtract it to 1, thus obtaining the probability of at least one student attending a course. Thus, we get (using R to simplify the writing of the formula. To run it, just paste it into a .r file or onto an online compiler and execute it): 1 - dbinom(0,2,0.46,log=FALSE) = 0.7084. <br />
 **[9]** <br />
   a] <br />
   b] <br />
