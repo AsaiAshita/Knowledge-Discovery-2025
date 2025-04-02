@@ -8,10 +8,10 @@ a] 1 - ppois(7,5.5) = 0.1905147  <br />
 b] here lambda = 2 x 5.5 = 11, hence 1 - ppois(13,11) = 0.2187088 <br />
 c] here lambda = 3 x 5.5 = 16.5, hence 1 - ppois(15,16.5) = 0.5819805 <br />
 **[3]** <br />
-a] <br />
-b] <br />
+a] We know the CDF of the uniform distribution is: F(x) = {0 if x < a; 1 if x > b; (x-a)/(b-a) if a <= x <= b}. Hence, in order to find the median, we set F(x) so that F(x) = 0.5, which means that x falls between a and b, so we get that F(x) = (x-a)/(b-a) = 0.5. We can resolve per x to obtain the value that would give us the median and we obtain: x = a + 0.5(b-a) = 1/2 x a + 1/2 x b = (a+b)/2   <br />
+b] As above, we could calculate the CDF of the normal distribution for F(x) = 0.5 in order to obtain the values. However, due to the symmetric property of the gaussian, we know that such a property tells us that the mean is equal to the median, hence F(x) = 0.5 = μ. A proof of the normal distribution having such a property can be found here: https://statproofbook.github.io/P/norm-med.html <br />
 **[4]** <br />
-a] <br />
+a] We want to compute P(X1 + X2 > 5000). Knowing that X1 and X2 are independent and that the sum of two gaussians is a gaussian with as arguments the sum of the two, we can sum them to give birth to the gaussian X3(μ=2200+2200=4400, σ^2=52900+52900=105800). We now want to calculate P(x > 5000), which we can do as P(x > 5000) = 1 - P(x <= 5000). Using R, we get this value as 1 - pnorm(5000, 4400, sqrt(105800)) = 0.03254595 <br />
 b] <br />
 **[5]** <br />
 a] <br />
