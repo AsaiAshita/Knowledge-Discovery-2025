@@ -18,12 +18,10 @@ a] As we said before, the sum of two gaussians is a gaussian with mean and varia
 b] B is a linear transformation of X involving a constant, hence B = N(5μ + 2, 25 x σ^2) <br />
 c] Because C is a linear transformation of gaussians, we can use what we have shown above to derive the final distribution. First of all, multiplying a gaussian means to scale it, which of course influences the mean and the variance as such: μ = a x μ, σ^2 = a^2 x σ^2. Then, because we are doing operations between gaussians, as seen before these give birth to a gaussian with the parameters being the result of the atomic operations involving the distributions. Hence, C=N(μ = (a x μ1) - (b x μ2) + (c^2 x μ3), σ^2 = a^2 x σ1^2 + b^2 x σ2^2 + c^4 x σ3^2). <br />
 **[6]** <br />
-a] By definition, a joint PDF on X and Y is given by a double integral between 0 and 1 on f(x) (which I don't know how to write in markdown, sorry). \[
-\int_{x_1}^{x_2} \int_{y_1}^{y_2} f(x, y) \, dy \, dx
-\]<br />
-b] <br />
-c] <br />
-d] <br />
+a] By definition, a joint PDF on X and Y is given by a double integral between 0 and 1 (for x) and between 0 and x (for y) on f(x) (which I don't know how to write in markdown, sorry). Making the calculations (which can be found in [inserire nome file]), the result gives us that c = 4. <br />
+b] In order to demonstrate whether X and Y are independent, we need to show that f(x,y) = fx(x)*fy(y), so the product of the marginal density functions needs to be equal to the joint distribution function. After having done the calculations (shown in [inserire nome file]), it is possible to see that this is not true, as we obtain that fx(x)*fy(y) = 2x x 4y x ln(y), which is not equal to f(x,y). Hence, X and Y are not independent.  <br />
+c] We have computed it in the previous point: X's marginal density function is fx(x) = 2x. <br />
+d] We have computed it in point b of this exercise: Y's marginal density function is fy(y) = 4y x ln(y). <br />
 **[7]** <br />
 a] <br />
 b] <br />
