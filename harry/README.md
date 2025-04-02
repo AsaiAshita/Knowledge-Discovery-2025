@@ -18,8 +18,9 @@ a] As we said before, the sum of two gaussians is a gaussian with mean and varia
 b] B is a linear transformation of X involving a constant, hence B = N(5μ + 2, 25 x σ^2) <br />
 c] Because C is a linear transformation of gaussians, we can use what we have shown above to derive the final distribution. First of all, multiplying a gaussian means to scale it, which of course influences the mean and the variance as such: μ = a x μ, σ^2 = a^2 x σ^2. Then, because we are doing operations between gaussians, as seen before these give birth to a gaussian with the parameters being the result of the atomic operations involving the distributions. Hence, C=N(μ = (a x μ1) - (b x μ2) + (c^2 x μ3), σ^2 = a^2 x σ1^2 + b^2 x σ2^2 + c^4 x σ3^2). <br />
 **[6]** <br />
-a] By definition, a joint PDF on X and Y is given by a double integral between 0 and 1 on f(x) \begin{gather*}
-    \iint_V \mu(u,v) \,du\,dv \end{gather*}	<br />
+a] By definition, a joint PDF on X and Y is given by a double integral between 0 and 1 on f(x) (which I don't know how to write in markdown, sorry). \[
+\int_{x_1}^{x_2} \int_{y_1}^{y_2} f(x, y) \, dy \, dx
+\]<br />
 b] <br />
 c] <br />
 d] <br />
